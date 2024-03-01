@@ -1,5 +1,6 @@
-spring:
+server:
   port: 8081
+spring:
   ai:
     openai:
       api-key: ${admin.openai.key}
