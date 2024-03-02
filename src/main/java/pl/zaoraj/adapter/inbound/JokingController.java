@@ -9,8 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class JokingController {
 
-	private static final String PROMPT_TEMPLATE = "Mam pewnien problem i potrzebuje żeby ktoś mnie doprowadził do " +
-			"pionu jakąś ciętą ripostą. Najlepiej sarkastycznie i śmiesznie ale nie obraźliwie. Mój problem to: ";
+	private static final String PROMPT_TEMPLATE = "Mam pewnien przesadzony problem i potrzebuję żeby ktoś mnie doprowadził do " +
+			"pionu ciętą ripostą. Najlepiej sarkastycznie i śmiesznie. Możesz skorzystać z najlepszych ripost jakie znasz " +
+			"z filmów i historycznych wypowiedzi. Mój problem to: ";
 	private final ChatClient chatClient;
 
 	@Autowired
