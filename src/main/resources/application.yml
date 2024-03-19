@@ -1,5 +1,10 @@
 server:
   port: 8081
+  ssl:
+    key-store: file:/app/zaoraj-be.p12
+    key-store-password: ${admin.keystore.password}
+    key-store-type: PKCS12
+    key-alias: zaoraj
 spring:
   ai:
     openai:
