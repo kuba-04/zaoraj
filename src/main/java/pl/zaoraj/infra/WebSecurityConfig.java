@@ -27,6 +27,7 @@ public class WebSecurityConfig {
         return http
                 .cors(c -> c.configurationSource(corsConfigurationSource()))
                 .csrf(AbstractHttpConfigurer::disable)
+                .requiresChannel(channel -> channel.anyRequest().requiresSecure())
                 .authorizeHttpRequests(c -> c.anyRequest().permitAll())
 //                .addFilterBefore(new RateLimitFilter(rateLimitService), BasicAuthenticationFilter.class)
                 .build();
